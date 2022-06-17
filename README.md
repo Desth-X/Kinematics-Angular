@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Kinematics-Angular
 
 Example of an Angular Application that allows to make simlpe kinematic's operations, (uniform linear motion | uniform circular motion)
