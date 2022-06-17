@@ -1,0 +1,26 @@
+<h2>{{strTitle}}</h2>
+<h3>{{strSubtitle}}</h3>
+<div>
+    <button (click)="calculateV()">Calculate Velocity</button>
+    <button (click)="calculateD()">Calculate Distance</button>
+    <button (click)="calculateT()">Calculate Time</button>
+</div>
+<br>
+<div [ngStyle]="{'display':strVVisibility}" >
+    <label for="velocity">Velocity (m/s): </label>
+    <input id="velocity" [(ngModel)]="strV" (keyup)="calculate()" placeholder="velocity">
+</div>
+
+<div [ngStyle]="{'display':strDVisibility}">
+    <label for="distance">Distance (m): </label>
+    <input id="distance" [(ngModel)]="strD" (keyup)="calculate()" placeholder="distance">
+</div>
+
+<div [ngStyle]="{'display':strTVisibility}">
+    <label for="time">Time (s): </label>
+    <input id="time" [(ngModel)]="strT" (keyup)="calculate()" placeholder="time">
+</div>
+<br>
+
+<h1>{{strResult}}</h1>
+
